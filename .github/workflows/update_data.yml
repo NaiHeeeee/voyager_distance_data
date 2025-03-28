@@ -1,0 +1,27 @@
+name: Download JS File
+
+on:
+  schedule:
+    # 每天凌晨 0 点执行 (UTC 时间)
+    - cron: '0 0 * * *'
+  # 允许手动触发
+  workflow_dispatch:
+
+jobs:
+  download-js:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Download JS file
+        run: |
+          curl -o voyager_distance_data.js https://voyager.jpl.nasa.gov/assets/javascripts/distance_data.js
+
+      - name: Commit changes
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add voyager_distance_data.js
+          git commit -m "Update voyager_distance_data.js" || echo "No changes to commit"
+          git push
