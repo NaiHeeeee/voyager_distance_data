@@ -2,8 +2,8 @@ name: Download JS File
 
 on:
   schedule:
-    # 每小时执行一次 (UTC 时间)
-    - cron: '0 * * * *'
+    # 每24小时执行一次 (UTC 时间)
+    - cron: '0 16 * * *'
   # 允许手动触发
   workflow_dispatch:
 
