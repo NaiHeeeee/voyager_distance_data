@@ -1,14 +1,7 @@
-let epoch_0 = 1757692800;
-let epoch_1 = 1757606400;
-
-let dist_0_v1 = 25175362879.0666;
-let dist_1_v1 = 25171816164.9353;
-
-let dist_0_v2 = 20995446978.9282;
-let dist_1_v2 = 20992425981.1383;
-
-let dist_0_v1s = 25169742587.2715;
-let dist_1_v1s = 25168283252.9650;
-
-let dist_0_v2s = 21056836993.0682;
-let dist_1_v2s = 21055537527.2039;
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>301 Moved Permanently</title>
+</head><body>
+<h1>Moved Permanently</h1>
+<p>The document has moved <a href="https://science.nasa.gov/mission/voyager">here</a>.</p>
+</body></html>
